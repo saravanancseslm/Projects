@@ -1,0 +1,46 @@
+										Maven - Build Tools,
+--> Compilies Source Code
+--> Package Compiled Code into JAR or ZIP File (Java archive) war, ear
+
+				
+
+				Practice
+
+Step 1 Maven Installation for AWS Linux
+
+--> Launch EC2 Instance
+
+--> yum update -y
+
+--> yum install java-11 -y
+
+--> yum install maven -y
+
+--> mvn --version
+
+AWS Linux Now Maven Installed,
+
+
+Step 2 Using Maven tool to Generate POM File
+
+POM File Need Details: 
+			<Project>
+			<modelvesion>4.0.0</modelvesion>
+			<groupid>com.resume</groupid>
+			<artifactid>myresume</artifactid>
+			<version>1.0.0</version>
+			</project>
+
+--> mvn archetype:generate
+
+	It ask project Details like group id, artifactid, version, package,..
+
+--> mvn clean package
+	
+	POM file Build on inside target directory
+
+POM file generated
+
+
+
+
